@@ -1,8 +1,3 @@
-# vitbhopal-dev-x-aggrawal
-The official repository for the VIT Bhopal Dev X Aggrawal project. Exploring modern web technologies, scalable architecture, and campus-focused software solutions.
-<br>
-Auther- Dev goyal
-<br>
-study- VIT BHOPAL UNIVERSITY
-<br>
+#Python Essentials - Evaluated Course Project
+
 
