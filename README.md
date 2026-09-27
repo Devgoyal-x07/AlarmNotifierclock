@@ -3,7 +3,7 @@
 **DEV**  
 Registration No.: `26BCY10129`
 
-# â° Alarm Clock
+# ◷  Alarm Clock
 
 A simple desktop alarm clock built with **Python** and **Tkinter**. Choose an hour, minute, and second from the drop-down menus, then set an alarm. When the selected time matches the computer's 24-hour clock, the app plays `sound.wav`.
 
@@ -24,9 +24,9 @@ A simple desktop alarm clock built with **Python** and **Tkinter**. Choose an ho
 
 ```text
 alarm-clock/
-â”œâ”€â”€ alarm_clock.py
-â”œâ”€â”€ sound.wav
-â””â”€â”€ README.md
+alarm_clock.py
+sound.wav
+README.md
 ```
 
 > If your Python script has a different name, use that filename in the run command below.
