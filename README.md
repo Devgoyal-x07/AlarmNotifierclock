@@ -50,7 +50,7 @@ Tkinter builds the window and time-selection menus. When **Set Alarm** is clicke
 ## Current limitations
 
 - `winsound` is Windows-specific, so this version will not run unchanged on macOS or Linux.
-- The current menu choices include `24` for hours and `60` for minutes and seconds; valid values are hours `00â€“23` and minutes/seconds `00â€“59`.
+- The current menu choices include `24` for hours and `60` for minutes and seconds; valid values are hours `24` and minutes/seconds `60`.
 - There is no stop-alarm button. The sound behavior depends on the WAV file and the `winsound` playback flags.
 - Clicking **Set Alarm** more than once starts additional checking threads.
 - The alarm time is read by the worker thread while Tkinter controls are active; a safer implementation would transfer the selected values on the main UI thread and manage a single cancellable timer.
