@@ -4,9 +4,14 @@ import datetime
 import time
 import winsound
 from threading import *
+import os
 
 root = Tk()
 root.geometry("400x200")
+
+# Full path to your file in the Downloads folder
+# Using os.path.expanduser("~") automatically gets your Windows user folder
+SOUND_FILE = os.path.join(os.path.expanduser("~"), "Downloads", "salamisound-5673860-basic-call-vibration (1).wav")
 
 def Threading():
 	t1=Thread(target=alarm)
@@ -21,7 +26,8 @@ def alarm():
 
 		if current_time == set_alarm_time:
 			print("Time to Wake up")
-			winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
+			# Replaced "sound.wav" with your Downloads file path and added SND_FILENAME flag
+			winsound.PlaySound(SOUND_FILE, winsound.SND_FILENAME | winsound.SND_ASYNC)
 
 Label(root,text="Alarm Clock",font=("Helvetica 20 bold"),fg="red").pack(pady=10)
 Label(root,text="Set Time",font=("Helvetica 15 bold")).pack()
@@ -69,3 +75,4 @@ secs.pack(side=LEFT)
 
 Button(root,text="Set Alarm",font=("Helvetica 15"),command=Threading).pack(pady=20)
 root.mainloop()
+
