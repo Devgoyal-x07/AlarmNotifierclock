@@ -1,10 +1,1 @@
-### Alarm Sound
-
-This project uses a WAV audio file for the alarm sound.
-
-Place an alarm sound file named `sound.wav` in the same folder as `alarm_clock.py`.
-
-The sound is played using:
-
-```python
 winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
