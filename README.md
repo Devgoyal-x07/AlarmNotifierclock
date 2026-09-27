@@ -23,7 +23,7 @@ A simple desktop alarm clock built with **Python** and **Tkinter**. Choose an ho
 ## Project files
 
 ```text
-alarm-clock/
+screenshots
 alarm_clock.py
 sound.wav
 README.md
